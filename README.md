@@ -1,2 +1,2 @@
 # utils
-Some utilities for code development and related stuff
+This is a loose collection of utilities that I found useful in code development and related activites. 

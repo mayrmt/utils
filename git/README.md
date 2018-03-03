@@ -19,7 +19,7 @@ source <path_to_this_folder>/.git-completion.bash
 ``` 
 to your ```~/.bashrc``` file.
 
-### Git Promps
+### Git Prompts
 The script ```.git-prompt.sh``` enhances the terminal prompt when your inside a Git repository. To enable the enhanced prompt, add
 ```
 source ~/.git-prompt.sh

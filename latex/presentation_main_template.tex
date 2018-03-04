@@ -1,0 +1,51 @@
+\documentclass[10pt]{beamer}
+
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+
+\graphicspath{{eps/}}
+
+\setbeamertemplate{footline}[text line]{
+  \parbox{0.9\linewidth}{
+    \vspace*{-12pt}<author>~|~<affiliation>~(<year>)
+  }
+  \hfill
+  \parbox{0.15\linewidth}{
+    \vspace*{-12pt}\raggedleft\insertpagenumber
+  }
+}
+
+\title[<short title>]{\textbf{<title>}}
+\author[<author>]{<author>}
+\institute{<affiliation>}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% include each chapter from a separate file
+\include{presentation_chapter_template}
+
+\end{document}

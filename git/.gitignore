@@ -1,0 +1,32 @@
+# Include files or file extensions that are not supposed to be
+# tracked via 'git'. These are mostly temporary files and
+# auxiliary files that can easily be generated from existing
+# source code.
+
+## OS X files
+.DS_STORE
+
+## LATEX
+# some files related to LaTeX compilation
+*.log
+*.aux
+*.bbl
+*.blg
+*.out
+*.spl
+*.tex~
+
+# Latexian
+TSWLatexianTemp_*
+
+# TexShop
+*.synctex.gz
+
+# Latex-related
+*-eps-converted-to.pdf
+
+## MATLAB
+*.m~
+
+## VI
+*.swp

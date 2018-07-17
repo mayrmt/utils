@@ -8,3 +8,6 @@ krylov
 ok
 residual
 richardson
+epetra
+tpetra
+jacobi

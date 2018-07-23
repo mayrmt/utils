@@ -9,7 +9,7 @@ Ninja is a small build system with a focus on speed. More details, source code, 
 For installation of ```ninja```, follow the instructions on [here](https://ninja-build.org)
 
 ### Configure your code to use ```ninja```
-Add the opton ```-GNinja``` to the ```cmake``` command in your configure script.
+Add the option ```-GNinja``` to the ```cmake``` command in your configure script.
 
 ### Using ```ninja```
 To build your code, ```cd``` to top level directory of your build folder and type ```ninja -j numProc``` with ```numProc``` being the number of processes to be used for the build.

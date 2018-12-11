@@ -65,3 +65,11 @@ uncoupled
 zoltan
 isorropia
 hypergraph
+subdomains
+kinematic
+euler
+jacobian
+triangulation
+globalization
+matthias
+mayr

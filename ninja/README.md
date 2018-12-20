@@ -11,6 +11,14 @@ For installation of ```ninja```, follow the instructions on [here](https://ninja
 ### Configure your code to use ```ninja```
 Add the option ```-GNinja``` to the ```cmake``` command in your configure script.
 
+#### Colored compiler output
+Configure colored compiler output by adding a flag to your `CMAKE_CXX_FLAGS`:
+
+- For Gnu's `gcc`, add compiler flag `-fdiagnostics-color=always`. 
+- For Clang,  add compiler flag `-fcolor-diagnostics`. 
+
+Refer to [this blog post](https://medium.com/@alasher/colored-c-compiler-output-with-ninja-clang-gcc-10bfe7f2b949) for further details and some CMake code snipptes to automate this in your CMake configuration.
+
 ### Using ```ninja```
 To build your code, ```cd``` to top level directory of your build folder and type ```ninja -j numProc``` with ```numProc``` being the number of processes to be used for the build.
 

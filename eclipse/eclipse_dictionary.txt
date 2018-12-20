@@ -73,3 +73,14 @@ triangulation
 globalization
 matthias
 mayr
+dof
+dofs
+strided
+xpetra
+aztec
+verbosity
+trilinos
+prolongation
+rebalancing
+restrictor
+preconditioners

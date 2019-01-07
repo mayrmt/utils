@@ -6,7 +6,7 @@ Ninja is a small build system with a focus on speed. More details, source code, 
 >Hint: To disable Fortran in [Trilinos](github.com:trilinos/Trilinos.git), add ```-D Trilinos_ENABLE_Fortran:BOOL=OFF``` to the ```cmake``` command in your configure script.
 
 ### Installation
-For installation of ```ninja```, follow the instructions on [here](https://ninja-build.org)
+For installation of ```ninja```, follow [these instructions](https://ninja-build.org).
 
 ### Configure your code to use ```ninja```
 Add the option ```-GNinja``` to the ```cmake``` command in your configure script.

@@ -84,3 +84,4 @@ prolongation
 rebalancing
 restrictor
 preconditioners
+kokkos

@@ -9,6 +9,8 @@ fi
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+export LC_NUMERIC="en_US.UTF-8"
+
 # Enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
   eval "`dircolors -b`"
@@ -33,3 +35,6 @@ source ~/utils/github_utils/git/.git-completion.bash
 # User specific aliases and functions
 alias ..="cd .."
 alias ll='ls -l'
+
+# Prepare for environment modules
+source /etc/profile.d/modules.sh

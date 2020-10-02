@@ -40,3 +40,11 @@ There are two mechanisms to exclude files from indexing and tracking in ```git``
 - Personal ignore patterns that are not to be shared with other project members are listed in ```.git/info/exclude```. 
 
 Full details can be found [here](https://git-scm.com/docs/gitignore).
+
+### Pre-commit hook to prevent commits on `master` branch
+
+The script `pre-commit` implements a pre-commit hook to
+- reject commits on `master`
+- allow commits only on a feature branch.
+
+To use it, copy the file `pre-commit` hook into a repository's `.git/hooks/` directory.

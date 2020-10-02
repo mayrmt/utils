@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#####################################################
+########## DESCRIPTION ##############################
+#####################################################
+
+# This pre - commit hook will be executed by Git before every new commit and consists of the following stages:
+#
+# Stage 1: Prevent commits on branch 'master'
+# A commit on the 'master' branch is rejected (script exits 1). The user is asked to create and checkout a new feature branch in order to proceed with the commit.
+#
+# The commit will be accepted if the script exits with 0
+#
+
+### Prevent commits to 'develop' ####################
+branch="$(git rev-parse --abbrev-ref HEAD)"
+if [ "$branch" = "master" ]
+then
+  printf "\n"
+  echo "Committing directly to 'master' branch is not allowed!"
+  printf "\n"
+  echo "--> Create and checkout a new feature branch via:"
+  echo "git checkout -b <branchName>"
+  echo "(All staged and unstaged changes are kept)"
+  printf "\n"
+  echo "--> Afterwards, commit on the newly created branch."
+  printf "\n"
+  exit 1
+fi
+
+exit 0
+

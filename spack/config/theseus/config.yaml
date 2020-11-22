@@ -1,0 +1,3 @@
+config:
+  build_stage:
+  - /tmp/pytest-of-a11bmama/pytest-2/test_keep_exceptions0/tmp

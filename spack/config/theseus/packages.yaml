@@ -1,0 +1,5 @@
+packages:
+  openmpi:
+    version: [3.1.6]
+  cmake:
+    version: [3.15.1]
